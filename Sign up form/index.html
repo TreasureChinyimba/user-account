@@ -13,14 +13,14 @@
                 <h1>Sign up</h1>
                 <div id="names">
                     <label for="full_name">Full name </label>
-                    <input type="text" name="full_name" id="full_name" placeholder="Enter full name">
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter full name" required>
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Enter email"></div>
+                    <input type="text" name="email" id="email" placeholder="Enter email" required></div>
                 <div class="phone">
                     <label for="phone_number">Phone number</label>
-                    <input type="text" name="phone_number" id="phone_number" placeholder="Enter phone number"></div>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Enter phone number" required></div>
                 <div class="gender">
                     <label for="gender">Gender </label>
                     <div class="radio-btns">
@@ -30,13 +30,12 @@
                 </div>
                 <div class="pwd">
                     <label for="pwd">Password</label>
-                    <input name="pwd" id="pwd" type="password" placeholder="Enter password">
+                    <input name="pwd" id="pwd" type="password" placeholder="Enter password" required>
                     <label for="confirm_pwd">Confirm password</label>
-                    <input name="confirm_pwd" id="confirm_pwd" type="password" placeholder="Confirm password">
+                    <input name="confirm_pwd" id="confirm_pwd" type="password" placeholder="Confirm password" required>
                 </div>
                 <div class="buttons">
                     <button id="sign_up" type="submit">Sign Up</button>
-                    <button id="login">Login</button>
                 </div>
             </form>
         </div>
@@ -46,6 +45,7 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
