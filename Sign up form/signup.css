@@ -1,3 +1,4 @@
+/* Centering contents of the page */
 body {
     margin: 0;
     background: #f1f1f1;
@@ -6,6 +7,9 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+
+/* importing custom fonts */
 
 @font-face {
     font-family: 'arvo';
@@ -22,6 +26,9 @@ body {
     src: url(fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
 }
 
+
+/* Styling the main div(has 2 direct child divs, left and right), 70% for width to make it responsive */
+
 .main {
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
@@ -30,13 +37,17 @@ body {
     padding: 10px;
     border-radius: 15px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;     /* won't wrap the divs when the width is reduced*/ 
 }
+
+/* Setting the theme of the input types */
 
 input {
     accent-color: #0059ff;
 }
 
+
+/* Styling the div that contains the form */
 .left {
     width: 50%;
     height: 100%;
@@ -45,15 +56,27 @@ input {
     padding: 10px;
 }
 
+
+/* Styling the header */
+
 h1 {
+    padding-bottom: 7px;
     font-family: 'arvo';
     font-weight: 300;
+    border-bottom: 2px solid #00aeff;
+    width: fit-content;
 }
+
+
+/* Setting the font family and weight of the labels of the input fields */
 
 label {
     font-family: 'Source Code Pro';
     font-weight: 500;
 }
+
+
+/* Styles the division on the right */
 
 .right {
     width: 50%;
@@ -67,6 +90,8 @@ label {
     cursor: pointer;
 }
 
+/* Hover effects on the right div */
+
 .right:hover{
     background: none;
     border:1px solid #0059ff;
@@ -78,11 +103,14 @@ label {
 
 }
 
+/* Setting input fields and their labels to be diplayed in a vertical direction */
 form>div {
     margin: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;      /* So that flex does not display contents in line but vertically instead */
 }
+
+/* Styling the text and password boxes uniformly */
 
 input[type="text"],
 input[type="password"] {
@@ -94,6 +122,9 @@ input[type="password"] {
     border-radius: 4px;
 }
 
+
+/* labels to the radio buttons */
+
 #label_male,
 #label_female {
     font-family: 'Source Code Pro';
@@ -101,6 +132,7 @@ input[type="password"] {
 }
 
 
+/* Styles for the sign up button */
 
 button {
     height: 35px;
@@ -111,20 +143,19 @@ button {
     margin-right: 5px;
     transition: 0.3s;
     cursor: pointer;
-}
-
-
-#sign_up {
     background: #00aeff;
     color: #fff;
     font-family: 'Source Code Pro';
     font-weight: 600;
 }
 
-#sign_up:hover {
+
+/* hover effect for sign up button */
+button:hover {
     background: #0094d8;
 }
 
+/* Styling the main div of the circle logo on the right div */
 
 .outer_circle {
     height: 150px;
@@ -134,6 +165,8 @@ button {
     background: #fff;
 }
 
+ /* Styling the inner circle of the logo */
+
 .circle_deco {
     height: 100%;
     width: 100%;
@@ -142,12 +175,18 @@ button {
     transform: rotate(270deg);
 }
 
+
+/* Styles for smaller screens and windows */
+
 @media (max-width: 673px) {
     .main {
         width: 70%;
         display: flex;
         justify-content: center;
     }
+
+    /* Removing the right div on smaller screens as it isn't necessary */
+
     .right {
         display: none;
     }
