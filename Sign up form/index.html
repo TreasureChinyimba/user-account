@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <form>
+                <h1>Sign up</h1>
+                <div id="names">
+                    <label for="full_name">Full name </label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter full name">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter email"></div>
+                <div class="phone">
+                    <label for="phone_number">Phone number</label>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Enter phone number"></div>
+                <div class="gender">
+                    <label for="gender">Gender </label>
+                    <div class="radio-btns">
+                        <input type="radio" name="gender" id="male"><span id="label_male"> Male</span>
+                        <input type="radio" name="gender" id="female"><span id="label_female"> Female</span>
+                    </div>
+                </div>
+                <div class="pwd">
+                    <label for="pwd">Password</label>
+                    <input name="pwd" id="pwd" type="password" placeholder="Enter password">
+                    <label for="confirm_pwd">Confirm password</label>
+                    <input name="confirm_pwd" id="confirm_pwd" type="password" placeholder="Confirm password">
+                </div>
+                <div class="buttons">
+                    <button id="sign_up" type="submit">Sign Up</button>
+                    <button id="login">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="outer_circle">
+                <div class="circle_deco"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
